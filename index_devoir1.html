@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up Literature</title>
+
+  <link rel="stylesheet" href="style_2.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- COLONNE GAUCHE : Formulaire -->
+    <div class="left">
+
+      <h1>Ready to start yoursuccess story?</h1>
+      <p class="subtitle">Signup to our website and start leafingthrough your favorite literature today!</p>
+
+      <form id="signup-form" novalidate>
+
+        <!-- Full name -->
+        <div class="field">
+          <label for="fullname">Full name</label>
+          
+          <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" autocomplete="name" required />
+        </div>
+
+        <!-- Email -->
+        <div class="field">
+          <label for="email">Email</label>
+          <!-- ✅ CORRECTION : required ajouté -->
+          <input type="email" id="email" name="email" placeholder="janedoe@mail.com" autocomplete="email" required />
+        </div>
+
+        <!-- Area of interest -->
+        
+        <div class="field">
+          <label for="interest">Area of interest</label>
+          <input type="text" id="interest" name="interest" placeholder="e.g. Fiction, Poetry…" />
+        </div>
+
+        <!-- Gender dropdown -->
+
+        <div class="field select-wrap">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            
+            <option value="" disabled selected>Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+      
+          </select>
+          <span class="chevron" aria-hidden="true">&#8964;</span>
+        </div>
+
+        <!-- Terms & Conditions -->
+        <div class="checkbox-row">
+       
+          <input type="checkbox" id="tc" name="tc" required />
+          <label for="tc">I agree to the <a href="#">Terms &amp; Conditions</a></label>
+        </div>
+
+        <!-- Message d'erreur global -->
+        <p class="form-error" id="form-error" role="alert" aria-live="polite"></p>
+
+        <!-- Bouton -->
+        <button type="submit" class="btn-signup">Sign up</button>
+
+      </form>
+    </div>
+
+    <!-- COLONNE DROITE : Illustration -->
+    <div class="right">
+      <img src="illustration.png" alt="Young woman lying down reading a book with her cat" />
+    </div>
+
+  </div>
+
+  
+    
